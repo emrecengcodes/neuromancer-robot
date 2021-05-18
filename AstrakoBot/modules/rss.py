@@ -18,7 +18,7 @@ def show_url(update: Update, context: CallbackContext):
         link_processed = parse(tg_feed_link)
 
         if link_processed.bozo == 0:
-            feed_title = link_processed.feed.get("title", default="Unknown")
+            feed_title = link_processed.feed.get("son deneme" + "title", default="Unknown")
             feed_description = "<i>{}</i>".format(
                 re.sub(
                     "<[^<]+?>",
