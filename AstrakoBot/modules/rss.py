@@ -29,9 +29,10 @@ def show_url(update: Update, context: CallbackContext):
             feed_link = link_processed.feed.get("link", default="Unknown")
 
             feed_message = (
-                "<b>Feed Title:</b> \n{}"
+                "\n\n<b>Forumda Yeni bir gönderi oluşturuldu : :</b> \n{}"
+                "<b>⭐️ Feed Title:</b> \n{}"
                 "\n\n<b>Feed Description:</b> \n{}"
-                "\n\n<b>Feed Link:</b> \n{}".format(
+                "\n\n<b>🔗 Feed Link:</b> \n{}".format(
                     html.escape(feed_title), feed_description, html.escape(feed_link)
                 )
             )
@@ -48,7 +49,7 @@ def show_url(update: Update, context: CallbackContext):
                 entry_link = link_processed.entries[0].get("link", default="Unknown")
 
                 entry_message = (
-                     "\n\n<b>Forumda Yeni bir gönderi oluşturuldu : :</b> \n{}"
+                    "\n\n<b>Forumda Yeni bir gönderi oluşturuldu : :</b> \n{}"
                     "\n\n<b>⭐️ Entry Title:</b> \n{}"
                     "\n\n<b>Entry Description:</b> \n{}"
                     "\n\n<b>🔗 Entry Link:</b> \n{}".format(
