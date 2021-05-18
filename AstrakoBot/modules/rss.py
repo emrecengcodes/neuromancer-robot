@@ -38,7 +38,7 @@ def show_url(update: Update, context: CallbackContext):
             )
 
             if len(link_processed.entries) >= 1:
-                entry_title = link_processed.entries[0].get("title", default="Unknown")
+                entry_title = "len onu" + link_processed.entries[0].get("title", default="Unknown")
                 entry_description = "<i>{}</i>".format(
                     re.sub(
                         "<[^<]+?>",
