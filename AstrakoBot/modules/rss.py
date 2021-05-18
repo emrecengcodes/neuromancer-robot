@@ -48,9 +48,10 @@ def show_url(update: Update, context: CallbackContext):
                 entry_link = link_processed.entries[0].get("link", default="Unknown")
 
                 entry_message = (
-                    "\n\n<b>Entry Title:</b> \n{}"
+                     "\n\n<b>Forumda Yeni bir gönderi oluşturuldu : :</b> \n{}"
+                    "\n\n<b>⭐️ Entry Title:</b> \n{}"
                     "\n\n<b>Entry Description:</b> \n{}"
-                    "\n\n<b>Entry Link:</b> \n{}".format(
+                    "\n\n<b>🔗 Entry Link:</b> \n{}".format(
                         html.escape(entry_title),
                         entry_description,
                         html.escape(entry_link),
