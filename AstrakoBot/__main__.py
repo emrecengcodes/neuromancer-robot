@@ -217,7 +217,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Add AstrakoBot to your group",
+                                text="Add Neuromanc3r to your group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
